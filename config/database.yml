@@ -58,4 +58,4 @@ production:
   database: baseball_production
   pool: 5
   username: baseball
-  password:
+  password: IBMsucks
