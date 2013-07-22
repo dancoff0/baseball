@@ -4,10 +4,3 @@ http://whispering-river-9681.herokuapp.com/ | git@heroku.com:whispering-river-96
 Git remote heroku added
 
 C:\Users\dmc\locationsinc\interview\baseball\app>
-
-// Second try
-C:\Users\dmc\locationsinc\interview\baseball>heroku create
-Creating safe-badlands-9030... done, stack is cedar
-http://safe-badlands-9030.herokuapp.com/ | git@heroku.com:safe-badlands-9030.git
-Git remote heroku added
-
