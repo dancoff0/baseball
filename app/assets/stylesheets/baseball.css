@@ -1,0 +1,142 @@
+/* Global settings to remove borders around button labels in FireFox */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner
+{
+  border : none;
+}
+
+ul.ColumnContainer, ul.VerticalList
+{
+  list-style: none outside none; 
+  padding   : 0; 
+  margin    : 0;
+}
+
+ul.ColumnContainer li
+{
+  margin-left : 20px;
+  float       : left;
+}
+
+li.LeftColumn
+{
+  width        : 200px;
+  padding-left : 20px;
+}
+
+span.BannerLabel
+{
+  font-family : Arial, Helvetica, Sans-Serif;
+  font-size   : 18px;
+  font-weight : normal;
+  color       : #000000;
+}
+
+div.BannerContainer
+{
+  text-align : center;
+}
+
+select.StatSelector
+{
+  width    : 150px;
+  position : relative;
+  bottom   : 10px;
+}
+
+div.ComboOutline
+{
+  height        : 40px; 
+  border        : 1px solid #2F7639;
+  padding-left  : 10px;
+  padding-right : 10px;
+  _display      : inline;  /* IE Only, note underscore hack */
+}
+
+span.ComboLabel
+{
+  position         : relative; 
+  top              : -12px; 
+  left             : 10px; 
+  background-color : #6c8dab; 
+  padding-left     : 5px; 
+  padding-right    : 5px;
+}
+
+li.VerticalItem
+{
+  padding-top : 20px;
+  float       : none !important;
+}
+
+table.StatTable
+{
+  border-collapse : collapse;
+}
+
+table.StatTable th
+{
+  border : 1px solid black;
+  height : 30px;
+}
+
+th.PlayerColumn, td.PlayerColumn
+{
+  width : 150px;
+}
+
+td.PlayerColumn
+{
+  text-align : right;
+  padding-right : 20px;
+}
+
+th.TeamColumn, td.TeamColumn
+{
+  width : 150px;
+}
+
+td.TeamColumn
+{
+  padding-left : 20px;
+}
+
+th.StatColumn, td.StatColumn
+{
+  width : 70px;
+}
+
+td.StatColumn
+{
+  text-align    : right;
+  padding-right : 20px;
+}
+
+tr.EvenRow td.TeamColumn, tr.EvenRow td.StatColumn, tr.EvenRow td.PlayerColumn 
+{
+  background-color : #FFFF80;  // Pale Yellow
+}
+
+th.SortedColumn
+{
+  background-color : #9AFCF3; // Pale blue
+}
+
+th.SortedColumn.Ascending
+{
+  background-image    : url( '/assets/sortAscending.png' );
+  background-position : right top;
+  background-repeat   : no-repeat;
+}
+
+th.SortedColumn.Descending
+{
+  background-image    : url( '/assets/sortDescending.png' );
+  background-position : right bottom;
+  background-repeat   : no-repeat;
+}
+
+

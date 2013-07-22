@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type"    content="text/html; charset=ISO-8859-1" >
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+  <title>Baseball Statistics</title>
+
+
+  <!-- Include the main javascript definitions -->
+  <%= javascript_include_tag "baseball" %>
+
+  <!-- Include the main style sheets -->
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- This is the onLoad function -->
+  <script type="text/javascript">
+    var io = {};
+    function initLoad()
+    {
+      // Call any page specific initialization routines.
+      initPage();
+
+      // Calculate the root path to the server
+      var documentRootPath = document.URL;
+      documentRootPath     = documentRootPath.substring( 0, documentRootPath.lastIndexOf( '/' ) + 1 );
+      io.getWebAppRootPath = (function( rootPath ) { return function(){ return rootPath; }; })( documentRootPath );
+    }
+  </script>
+
+</head>
+<body onLoad="initLoad()">
+
+<%= yield %>
+
+</body>
+</html>
+

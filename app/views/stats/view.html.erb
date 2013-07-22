@@ -1,0 +1,73 @@
+
+  <!-- This will contain the two columns -->
+  <ul class="ColumnContainer">
+
+    <!-- Left column containing the selectors -->
+    <li class="LeftColumn">
+
+      <div id="SelectorColumnDIV" class="SelectorColumn">
+	<ul class="VerticalList">
+	  <li class="VerticalItem">
+	    <span class="BannerLabel">Select your Statistics</span>
+	  </li>
+	  <li class="VerticalItem">
+	    <div class="ComboOutline">
+	      <span class="ComboLabel">Select the season</span>
+              <select id="YearSelector" value="" size="1" class="StatSelector" onChange="handleYearSelection( this.options[ this.selectedIndex ] )" >
+		<option value="1998">1998</option>
+	      </select>
+	    </div>
+	  </li>
+	  <li class="VerticalItem">
+	    <div class="ComboOutline">
+	      <span class="ComboLabel">Select the League</span>
+	      <select id="LeagueSelector" value="" size="1" class="StatSelector" disabled="true" onChange="handleLeagueSelection( this.options[ this.selectedIndex ] )" >
+		<option value="0">All Leagues</option>
+	      </select>
+	    </div>
+	  </li>
+	  <li class="VerticalItem">
+	    <div class="ComboOutline">
+	    <span class="ComboLabel">Select the Division</span>
+	    <select id="DivisionSelector" value="" size="1" class="StatSelector" disabled="true" >
+	      <option value="0">All Divisions</option>
+	    </select>
+	  </li>
+	  <li class="VerticalItem">
+	    <input type="button" id="StatFetcherButton" class="FormButton FormButton:hover FormButton:focus" onClick="fetchStats()" value="View Stats" disabled="true">
+	  </li>
+	</ul>
+      </div>
+    </li>
+
+    <!-- Right column displaying the statistics, themselves -->
+    <li class="RightColumn">
+      <div id="StatsColumnDIV" class="StatsColumn">
+	<ul class="VerticalList">
+	  <li class="VerticalItem">
+	    <div class="BannerContainer">
+	      <span class="BannerLabel">View your Statistics</span>
+	    </div>
+	  </li>
+	  <li class="VerticalItem">
+	    <table class="StatTable" id="StatTable">
+	      <thead>
+		<th class="PlayerColumn">Player</th>
+		<th class="TeamColumn">Team</th>
+		<th id="AVGHeader"  class="StatColumn">AVG</th>
+		<th id="HRHeader"   class="StatColumn">HR</th>
+		<th id="RBIHeader"  class="StatColumn">RBI</th>
+		<th id="RUNSHeader" class="StatColumn">RUNS</th>
+		<th id="SBHeader"   class="StatColumn">SB</th>
+		<th id="OPSHeader"  class="StatColumn">OPS</th>
+	      </thead>
+              <tbody>
+              </tbody>
+	    </table>
+	  </li>
+	</ul>
+
+      </div>
+    </li>
+  </ul>
+
