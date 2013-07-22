@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  surName: MyString
+  givenName: MyString
+  atBat: 1
+  run: 1
+  hit: 1
+  homeRun: 1
+  rbi: 1
+  steal: 1
+  sacrificeFly: 1
+  walk: 1
+  bean: 1
+  team_id: 
+
+two:
+  surName: MyString
+  givenName: MyString
+  atBat: 1
+  run: 1
+  hit: 1
+  homeRun: 1
+  rbi: 1
+  steal: 1
+  sacrificeFly: 1
+  walk: 1
+  bean: 1
+  team_id: 

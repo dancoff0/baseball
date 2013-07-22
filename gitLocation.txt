@@ -1,0 +1,6 @@
+C:\Users\dmc\locationsinc\interview\baseball\app>heroku create
+Creating whispering-river-9681... done, stack is cedar
+http://whispering-river-9681.herokuapp.com/ | git@heroku.com:whispering-river-9681.git
+Git remote heroku added
+
+C:\Users\dmc\locationsinc\interview\baseball\app>
