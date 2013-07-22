@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web application for displaying baseball statistics.  It is
+implemented using Ruby-on-Rails as the platform, with the user's view presented through a combination of dynamic HTML, CSS and javascript. The application has been tested on the Firefox, Chrome and Safari web browsers, the latter working even on the iPhone and iPad. However, the application does not yet work correctly on any version of Internet Explorer.
 
-Things you may want to cover:
+Some notes on the implementation:
+ 1.  When you first load the application, the season selector is preloaded with a list of known years --- here, only 1998. After you pick a year, the "View Stats" button is enabled.  You may or may not choose a league and division for further filtering. Pressing this button causes the first fetch of 25 players and the display of these.
+ 2. Initially, the players are sorted by batting average, in descending order. I implemented sorting on each of the statistics columns, but not the names or teams.  Clicking on the column header causes the players to be sorted by the statistic in that column. Repeated clicking on the header toggles the sort direction.
+ 3. Only 25 players are fetched each time a sort commences. After the first time the players are fetched for a particular sort, the values are cached on the client.
 
-* Ruby version
+The application requires Ruby version 1.9.3 and Rails version 4.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
