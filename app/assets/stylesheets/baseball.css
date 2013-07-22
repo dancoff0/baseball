@@ -128,14 +128,16 @@ th.SortedColumn
 
 th.SortedColumn.Ascending
 {
-  background-image    : url( '/assets/sortAscending.png' );
+  /* background-image    : url( '/assets/sortAscending.png' ); */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFAgMAAAAF/0XGAAAAA3NCSVQICAjb4U/gAAAADFBMVEX////CwsLBwcE6OjoH1QX/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNi8yMy8wOWyklnAAAAAldEVYdFNvZnR3YXJlAE1hY3JvbWVkaWEgRmlyZXdvcmtzIE1YIDIwMDSHdqzPAAAAF0lEQVQI12NgZmDgP8Bg+4Hhlw2DCCsAFtUDT4fQfQkAAAAASUVORK5CYII=);
   background-position : right top;
   background-repeat   : no-repeat;
 }
 
 th.SortedColumn.Descending
 {
-  background-image    : url( '/assets/sortDescending.png' );
+  /* background-image    : url( '/assets/sortDescending.png' ); */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFAgMAAAAF/0XGAAAAA3NCSVQICAjb4U/gAAAADFBMVEX////CwsLBwcE6OjoH1QX/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNi8yMy8wOWyklnAAAAAldEVYdFNvZnR3YXJlAE1hY3JvbWVkaWEgRmlyZXdvcmtzIE1YIDIwMDSHdqzPAAAAF0lEQVQI12P4YMNg842B/wkDcwIDQwMAJS4ENbz/rj0AAAAASUVORK5CYII=);
   background-position : right bottom;
   background-repeat   : no-repeat;
 }
