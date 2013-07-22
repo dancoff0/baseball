@@ -79,8 +79,9 @@ table.StatTable
 
 table.StatTable th
 {
-  border : 1px solid black;
-  height : 30px;
+  border     : 1px solid black;
+  height     : 30px;
+  text-align : center;
 }
 
 th.PlayerColumn, td.PlayerColumn
