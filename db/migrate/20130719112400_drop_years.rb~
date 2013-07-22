@@ -1,4 +1,0 @@
-class DropYears < ActiveRecord::Migration
-  def change
-  end
-end
