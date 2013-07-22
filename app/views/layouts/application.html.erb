@@ -7,7 +7,10 @@
 
 
   <!-- Include the main javascript definitions -->
-  <%= javascript_include_tag "baseball" %>
+  <%= javascript_include_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <!--
+  <script src="/assets/baseball.js?body=1"></script>
+  -->
 
   <!-- Include the main style sheets -->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
